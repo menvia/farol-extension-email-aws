@@ -1,0 +1,22 @@
+{
+  "type": "email",
+  "schema": [
+    {
+      "name": "accessKeyId",
+      "type": "string"
+    },
+    {
+      "name": "secretAccessKey",
+      "type": "string"
+    },
+    {
+      "name": "region",
+      "type": "string"
+    },
+    {
+      "name": "sender",
+      "type": "string"
+    }
+  ],
+  "icon": "icon.png"
+}

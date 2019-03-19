@@ -1,0 +1,25 @@
+{
+  "name": "farol-extension-email-aws",
+  "version": "1.0.0",
+  "description": "Farol Extension - AWS SES",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/menvia/farol-extension-email-aws.git"
+  },
+  "keywords": [
+    "farol",
+    "extension",
+    "aws",
+    "ses"
+  ],
+  "author": "Menvia Developer <developer@menvia.com> (https://menvia.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/menvia/farol-extension-email-aws/issues"
+  },
+  "homepage": "https://github.com/menvia/farol-extension-email-aws#readme"
+}
