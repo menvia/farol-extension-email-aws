@@ -1,4 +1,4 @@
-# Farol Extension for Email AWS
+# Farol Extension for Email AWS (SES)
 
 ## Install
 
