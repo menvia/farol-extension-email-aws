@@ -1,4 +1,11 @@
 {
+  "name": "AWS Email",
+  "description": {
+    "en": "Farol Extension to integrate with AWS SES (Email) service",
+    "pt": "Extensão do Farol para integrar com os serviços da AWS SES (Email)",
+    "es": "Extensión de Farol para integrarse con el servicio AWS SES (correo electrónico)"
+  },
+  "icon": "icon.png",
   "type": "email",
   "schema": [
     {
@@ -17,6 +24,5 @@
       "name": "sender",
       "type": "string"
     }
-  ],
-  "icon": "icon.png"
+  ]
 }
