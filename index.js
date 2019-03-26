@@ -1,36 +1,36 @@
-module.exports = (extension) => {
+module.exports = extension => {
   const controller = {};
 
   const AWS = require('aws-sdk');
-  AWS.config.update({
+  const access = {
     accessKeyId: extension.settings.accessKeyId,
     secretAccessKey: extension.settings.secretAccessKey,
-    region: extension.settings.region,
-  });
-  const email = new AWS.SES();
+    region: extension.settings.region
+  };
+  const email = new AWS.SES(access);
 
   controller.send = async (to, subject, message, altText) => {
     const params = {
       Destination: {
-        ToAddresses: [to],
+        ToAddresses: [to]
       },
       Message: {
         Body: {
           Html: {
             Charset: 'UTF-8',
-            Data: message,
+            Data: message
           },
           Text: {
             Charset: 'UTF-8',
-            Data: altText,
-          },
+            Data: altText
+          }
         },
         Subject: {
           Charset: 'UTF-8',
-          Data: subject,
-        },
+          Data: subject
+        }
       },
-      Source: extension.settings.sender,
+      Source: extension.settings.sender
     };
     return email.sendEmail(params).promise();
   };
