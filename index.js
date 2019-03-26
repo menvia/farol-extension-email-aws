@@ -9,10 +9,6 @@ module.exports = extension => {
   };
   const email = new AWS.SES(access);
 
-  console.log('>>>>>>>>>>');
-  console.log(email.config.accessKeyId);
-  console.log('<<<<<<<<<<<');
-
   controller.send = async (to, subject, message, altText) => {
     const params = {
       Destination: {
