@@ -1,6 +1,6 @@
 {
   "name": "farol-extension-email-aws",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Farol Extension - AWS SES",
   "main": "index.js",
   "scripts": {
